@@ -1,5 +1,6 @@
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 import * as images from "./img";
+import audioFile from '../public/audio.mp3';
 
 export default function App() {
   return (
@@ -103,6 +104,10 @@ function Max() {
   return (
     <div className="content">
       <h2>Max MSP</h2>
+      <audio controls>
+        <source src={audioFile} type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eligendi odio illum labore et perferendis accusamus error assumenda sunt soluta facere totam dolore at, placeat quidem eius qui suscipit incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit fugiat, nam neque minima reprehenderit a, fuga blanditiis et magni, repudiandae amet esse. Neque suscipit vitae, totam iusto et ducimus voluptatibus.</p>
     </div>
   );
