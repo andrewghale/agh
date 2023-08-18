@@ -1,4 +1,5 @@
 import { Routes, Route, Outlet, Link } from "react-router-dom";
+import * as images from "./img";
 
 export default function App() {
   return (
@@ -22,7 +23,11 @@ function Layout() {
       {/* A "layout route" is a good place to put markup you want to
           share across all the pages on your site, like navigation. */}
       <div className="sidebar">
-        <h1><Link to="/">Andrew Hale</Link></h1>
+        <div className="title">
+          <Link to="/">
+            <img src={images.hero} alt="image" />
+          </Link>
+        </div>
         <nav>
           <ul>
             <li>Work</li>
@@ -56,8 +61,30 @@ function Layout() {
 function Home() {
   return (
     <div className="content">
-      <h2>Home</h2>
-      <p>info info info klnflg gnogn Lorem ipsum dolor sit amet consectetur adipisicing elit. At omnis saepe dolores officiis sunt velit, iusto nesciunt id tempore autem. In repellendus possimus nisi. Esse, vitae. Reprehenderit recusandae nisi natus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet nesciunt aliquid, facere molestiae ducimus repellendus dignissimos eveniet libero a explicabo. Praesentium dolores recusandae, quas modi assumenda laborum sunt voluptates at.</p>
+      <div className="row">
+        <div className="img-div">
+          <img src={images.home} alt="image" />
+        </div>
+        <div className="img-div">
+          <img src={images.home2} alt="image" />
+        </div>
+      </div>
+      <div className="row">
+        <div className="img-div">
+          <img src={images.home3} alt="image" />
+        </div>
+        <div className="img-div">
+          <img src={images.home4} alt="image" />
+        </div>
+      </div>
+      <div className="row">
+        <div className="img-div">
+          <img src={images.home5} alt="image" />
+        </div>
+        <div className="img-div">
+          <img src={images.home6} alt="image" />
+        </div>
+      </div>
     </div>
   );
 }
