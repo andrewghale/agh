@@ -2,6 +2,7 @@ import { Routes, Route, Outlet, Link } from "react-router-dom";
 import * as images from "./img";
 import audioFile from '../public/audio.mp3';
 import audioFile2 from '../public/audio2.mp3';
+import movieFile from '../public/output.mp4';
 
 export default function App() {
   return (
@@ -104,6 +105,12 @@ function Developer() {
 function Max() {
   return (
     <div className="content">
+      <div className="video-player">
+        <video controls autoPlay className="custom-video">
+          <source src={movieFile} type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
+      </div>
       <div className="audio-player">
         <div className="icon-container">
           <svg xmlns="http://www.w3.org/2000/svg" className="audio-icon" viewBox="0 0 20 20" fill="currentColor">
