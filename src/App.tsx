@@ -2,7 +2,7 @@ import { Routes, Route, Outlet, Link } from "react-router-dom";
 import * as images from "./img";
 import audioFile from '../public/audio.mp3';
 import audioFile2 from '../public/audio2.mp3';
-import movieFile from '../public/output.mp4';
+import movieFile from '../public/output_trimmed.mp4';
 
 export default function App() {
   return (
