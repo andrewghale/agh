@@ -2,7 +2,8 @@ import { Routes, Route, Outlet, Link } from "react-router-dom";
 import * as images from "./img";
 import audioFile from '../public/audio.mp3';
 import audioFile2 from '../public/audio2.mp3';
-import movieFile from '../public/output_trimmed.mp4';
+import movieFile from '../public/output_combined.mp4';
+import movieMain from '../public/main_vid.mp4';
 
 export default function App() {
   return (
@@ -106,7 +107,13 @@ function Max() {
   return (
     <div className="content">
       <div className="video-player">
-        <video controls autoPlay className="custom-video">
+        <video controls className="custom-video">
+          <source src={movieMain} type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
+      </div>
+      <div className="video-player">
+        <video controls className="custom-video">
           <source src={movieFile} type="video/mp4" />
           Your browser does not support the video element.
         </video>
@@ -143,6 +150,9 @@ function CV() {
     <div className="content">
       {/* <h2>Nothing to see here!</h2> */}
       <p>
+
+        Minor change
+
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nemo aut nobis assumenda veritatis minus dolorem? Odit quos fugiat facere doloremque eum, culpa in placeat necessitatibus, esse, praesentium officiis temporibus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, mollitia dolor, laudantium assumenda deserunt doloribus repellendus aperiam quidem deleniti nisi quaerat temporibus! Suscipit reprehenderit mollitia molestiae vel at in. Sequi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti maiores cum nobis fugiat culpa perspiciatis nesciunt, reiciendis fugit pariatur provident suscipit ullam, quibusdam consectetur. Expedita saepe repudiandae voluptatum amet quo!
       </p>
     </div>
