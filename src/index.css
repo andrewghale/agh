@@ -116,6 +116,13 @@ audio::-webkit-media-controls-panel {
   object-fit: cover; /* Zoom in on the image to fill the container */
 }
 
+.hover-zoom {
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.hover-zoom:hover {
+  transform: scale(1.1); /* Increase the size by 10% on hover */
+}
 
 hr {
   margin: 2rem;

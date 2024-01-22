@@ -67,26 +67,26 @@ function Home() {
     <div className="content">
       <div className="row">
         <div className="img-div">
-          <img src={images.home} alt="image" />
+          <img className="hover-zoom" src={images.home} alt="image" />
         </div>
         <div className="img-div">
-          <img src={images.home2} alt="image" />
-        </div>
-      </div>
-      <div className="row">
-        <div className="img-div">
-          <img src={images.home3} alt="image" />
-        </div>
-        <div className="img-div">
-          <img src={images.home4} alt="image" />
+          <img className="hover-zoom" src={images.home2} alt="image" />
         </div>
       </div>
       <div className="row">
         <div className="img-div">
-          <img src={images.home5} alt="image" />
+          <img className="hover-zoom" src={images.home3} alt="image" />
         </div>
         <div className="img-div">
-          <img src={images.home6} alt="image" />
+          <img className="hover-zoom" src={images.home4} alt="image" />
+        </div>
+      </div>
+      <div className="row">
+        <div className="img-div">
+          <img className="hover-zoom" src={images.home5} alt="image" />
+        </div>
+        <div className="img-div">
+          <img className="hover-zoom" src={images.home6} alt="image" />
         </div>
       </div>
     </div>
