@@ -1,7 +1,10 @@
 {
+  "homepage": "https://andrewghale.github.io/agh/",
   "name": "basic",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview"
@@ -17,6 +20,7 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.0.1",
+    "gh-pages": "^6.1.1",
     "typescript": "^4.9.5",
     "vite": "^4.0.4"
   }
