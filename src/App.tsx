@@ -9,7 +9,7 @@ export default function App() {
   return (
     <div className="app">
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/agh" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="developer" element={<Developer />} />
           <Route path="max" element={<Max />} />
@@ -28,7 +28,7 @@ function Layout() {
           share across all the pages on your site, like navigation. */}
       <div className="sidebar">
         <div className="title">
-          <Link to="/">
+          <Link to="/agh/">
             <img src={images.hero} alt="image" />
           </Link>
         </div>
@@ -36,14 +36,14 @@ function Layout() {
           <ul>
             <li>Work</li>
             <li>
-              <Link to="/developer">Developer</Link>
+              <Link to="developer">Developer</Link>
             </li>
             <li>
-              <Link to="/max">Max MSP</Link>
+              <Link to="max">Max MSP</Link>
             </li>
             <li>Links</li>
             <li>
-              <Link to="/cv">CV</Link>
+              <Link to="cv">CV</Link>
             </li>
             <li>
               <a href="https://github.com/andrewghale">Github</a>
