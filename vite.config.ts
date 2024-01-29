@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-  base: "/agh/",
+  base: "/",
   plugins: [
     rollupReplace({
       preventAssignment: true,
