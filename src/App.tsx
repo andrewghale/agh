@@ -69,16 +69,14 @@ function Home() {
         <div className="img-div">
           <img className="hover-zoom" src={images.home2} alt="image" />
         </div>
-      </div>
-      <div className="row">
         <div className="img-div">
           <img className="hover-zoom" src={images.home3} alt="image" />
         </div>
+      </div>
+      <div className="row">
         <div className="img-div">
           <img className="hover-zoom" src={images.home4} alt="image" />
         </div>
-      </div>
-      <div className="row">
         <div className="img-div">
           <img className="hover-zoom" src={images.home5} alt="image" />
         </div>
@@ -110,7 +108,7 @@ function Max() {
         </video>
       </div>
       <div className="video-player">
-        <video controls className="custom-video">
+        <video controls autoPlay loop muted className="custom-video">
           <source src={movs.output_combined} type="video/mp4" />
           Your browser does not support the video element.
         </video>

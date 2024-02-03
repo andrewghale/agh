@@ -35,6 +35,12 @@ a:visited {
   color: inherit;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .main {
   display: flex;
   flex-direction: row;
@@ -123,6 +129,7 @@ audio::-webkit-media-controls-panel {
   height: 300px; /* Set a fixed height for each image container */
   overflow: hidden; /* Hide overflow to crop the images */
   margin: 0 10px;
+  border-radius: 0.5rem;
 }
 
 .img-div img {
