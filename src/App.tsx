@@ -100,38 +100,28 @@ function Max() {
   return (
     <div className="content">
       <div className="video-player">
-        <video controls className="custom-video">
+        <video controls autoPlay loop muted className="custom-video">
           <source src={movs.main_vid} type="video/mp4" />
           Your browser does not support the video element.
         </video>
       </div>
       <div className="video-player">
         <video controls autoPlay loop muted className="custom-video">
-          <source src={movs.output_combined} type="video/mp4" />
+          <source src={movs.asteroid} type="video/mp4" />
           Your browser does not support the video element.
         </video>
       </div>
-      <div className="audio-player">
-        <div className="icon-container">
-          <svg xmlns="http://www.w3.org/2000/svg" className="audio-icon" viewBox="0 0 20 20" fill="currentColor">
-            <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z" />
-          </svg>
-          <audio controls className="custom-audio">
-            <source src={movs.audio1} type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio>
-        </div>
+      <div className="video-player">
+        <video controls autoPlay loop muted className="custom-video">
+          <source src={movs.kaleid} type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
       </div>
-      <div className="audio-player">
-        <div className="icon-container">
-          <svg xmlns="http://www.w3.org/2000/svg" className="audio-icon" viewBox="0 0 20 20" fill="currentColor">
-            <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z" />
-          </svg>
-          <audio controls className="custom-audio">
-            <source src={movs.audio2} type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio>
-        </div>
+      <div className="video-player">
+        <video controls autoPlay loop muted className="custom-video">
+          <source src={movs.doughnut} type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
       </div>
     </div>
   );
